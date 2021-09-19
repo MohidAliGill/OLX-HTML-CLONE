@@ -1,0 +1,363 @@
+.breadcrumbBar {
+  padding-left: 1.5rem;
+  height: 30px;
+}
+
+.mainBody {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.breadcrumbText {
+  color: #678386;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.breadcrumb-item.hover,
+.breadcrumbText:hover {
+  color: #174246;
+}
+
+.imageBox {
+  position: relative;
+  background-color: #000000;
+}
+
+.productImage {
+  height: 480px;
+  width: auto;
+}
+
+.imageRightArrow {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 230px;
+  right: 1%;
+  cursor: pointer;
+}
+
+.imageLeftArrow {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 230px;
+  left: 1%;
+  cursor: pointer;
+}
+
+.relevantImage {
+  height: 60px;
+  width: 60px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.relevantImageBox {
+  border-color: #a3b5b6;
+}
+
+.featuredImage {
+  width: 100px;
+  background-color: #f6ce33;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  top: 30px;
+  left: 0;
+}
+
+.productDetailSection {
+  border-color: #a3b5b6;
+}
+
+.detailBox {
+  width: 50%;
+  margin-top: 10px;
+}
+
+.detailDivider {
+  background-color: #a3b5b6;
+  width: 98%;
+  height: 1px;
+  margin-left: 1%;
+}
+
+.productDetailHeading {
+  color: #0d2f34;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.detailName {
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 14px;
+}
+
+.detailValue {
+  color: #002f34;
+  font-size: 14px;
+}
+
+.relatedAdd {
+  width: 24%;
+  margin-right: 1%;
+}
+
+.featured {
+  text-align: center;
+  padding-top: 2px;
+  color: black;
+  font-size: 55%;
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background-color: #ffd500;
+  top: 6px;
+  left: 6px;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.addSlider {
+  position: relative;
+}
+
+.sliderRightArrow {
+  position: absolute;
+  height: 10%;
+  width: 32px;
+  top: 45%;
+  right: 5px;
+}
+
+.sliderLeftArrow {
+  position: absolute;
+  height: 10%;
+  width: 32px;
+  top: 45%;
+  left: 5px;
+}
+
+.priceSection {
+  border-color: #a3b5b6;
+  position: relative;
+}
+
+.heartImagePriceSection {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  right: 8px;
+  cursor: pointer;
+}
+
+.shareImage {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 0;
+  right: 47px;
+  cursor: pointer;
+}
+
+.shareImage:hover {
+  background-color: #c8f8f6;
+}
+
+.priceHeading {
+  color: #0d2f34;
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.carYear {
+  color: #0d2f34;
+  font-size: 16px;
+}
+
+.extraDetail1 {
+  color: #5c7a7d;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.extraDetail2 {
+  color: #5c7a7d;
+  font-size: 12px;
+}
+
+.sellerDescriptionHeading {
+  font-size: 20px;
+  color: #0d2f34;
+}
+
+.sellerPhoto {
+  height: 68px;
+  width: 68px;
+}
+
+.sellerName {
+  font-weight: 700;
+  font-size: 16px;
+  color: #222222;
+}
+
+.joinDate {
+  font-size: 14px;
+  color: rgba(0, 47, 52, 0.64);
+}
+
+.userInfoBox {
+  margin-left: 15px;
+  padding-top: 10px;
+}
+
+.userDetailsBox {
+  cursor: pointer;
+  position: relative;
+}
+
+.userProfileArrow {
+  position: absolute;
+  top: 25px;
+  right: 5%;
+}
+
+.phoneNum {
+  margin-right: 16px;
+  margin-left: 16px;
+  font-size: 14px;
+  color: #133c41;
+}
+
+.chatButton {
+  background-color: #0d2f34;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  height: 38px;
+  width: 90%;
+  padding-top: 8px;
+}
+
+.showNumberBtn {
+  color: #3a77ff;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.locationHeading {
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #002f34;
+  font-weight: 700;
+}
+
+.locationName {
+  color: rgba(0, 47, 52, 0.64);
+  font-size: 12px;
+}
+
+.locationImage {
+  width: 100%;
+  max-height: 300px;
+}
+
+.seeLocationBtn {
+  padding: 12px;
+}
+
+.locationBtnText {
+  font-size: 14px;
+  color: #002f34;
+  font-weight: 700;
+}
+
+.locationImageBox {
+  box-shadow: 0 2px #dbdbdb;
+}
+
+.addNumber {
+  margin-top: 8px;
+  color: #002f34;
+  font-weight: 700;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 1515px) {
+  .relatedAdd {
+    width: 33%;
+  }
+
+  .card4 {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .relatedAdd {
+    width: 49%;
+  }
+
+  .card3 {
+    display: none;
+  }
+}
+
+@media (max-width: 998px) {
+  .breadcrumbBar,
+  .imageBox {
+    padding-left: 1rem;
+  }
+
+  .productImage {
+    height: 300px;
+  }
+
+  .mainBody {
+    margin-top: 35px;
+  }
+
+  .imageRightArrow,
+  .imageLeftArrow {
+    top: 140px;
+    right: 3%;
+  }
+
+  .card3,
+  .card4 {
+    display: block;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .priceSection,
+  .sellerDescriptionSection,
+  .locationBox {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .card4 {
+    display: none;
+  }
+}
+
+@media (max-width: 685px) {
+  .card3 {
+    display: none;
+  }
+}

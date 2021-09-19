@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="batmobileStyle.css" />
+    <link rel="icon" href="assets/olx-logo.png" type="image/x-icon" />
+    <title>The Original Batmobile</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-head">
+        <div class="container navbarHeight">
+            <img src="https://www.olx.com.pk/assets/logo_noinline.1cdf230e49c0530ad4b8d43e37ecc4a4.svg" alt="olx logo"
+                class="navbar-brand" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-head" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-head">
+                    <li class="
+                nav-item
+                dropdown
+                border border-1
+                rounded
+                border-dark
+                bg-white
+              ">
+                        <a class="nav-link position-relative " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-search p-2 fw-bold"></i><input class="border border-0" type=""
+                                placeholder="Pakistan" />
+                            <img class="openList"
+                                src="https://www.olx.com.pk/assets/iconArrowDown_noinline.ec05eae7013321c193965ef15d4e2174.svg"
+                                alt="arrow" />
+                        </a>
+                        <ul class="dropdown-menu locationDropdown" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item currLoc loc-item" href="#"><img
+                                        src="https://www.olx.com.pk/assets/iconCurrentLocation_noinline.6acc646ec0e4ecdee696b5588b92c859.svg"
+                                        alt="target image" />
+                                    Use Current Location</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <h6 class="dropdown-header">Choose Cities</h6>
+                            </li>
+                            <li>
+                                <a class="dropdown-item loc-item" href="#"><img
+                                        src="https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg"
+                                        alt="Location image" />
+                                    Islamabad, Pakistan</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item loc-item" href="#"><img
+                                        src="https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg"
+                                        alt="Location image" />
+                                    Lahore, Pakistan</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item loc-item" href="#"><img
+                                        src="https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg"
+                                        alt="Location image" />
+                                    Rawalpindi, Pakistan</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item loc-item" href="#"><img
+                                        src="https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg"
+                                        alt="Location image" />
+                                    Sialkot, Pakistan</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item loc-item" href="#"><img
+                                        src="https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg"
+                                        alt="Location image" />
+                                    Gujranwala, Pakistan</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item loc-item" href="#"><img
+                                        src="https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg"
+                                        alt="Location image" />
+                                    Karachi, Pakistan</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item loc-item" href="#"><img
+                                        src="https://www.olx.com.pk/assets/iconLocation_noinline.dd275c9d8c1ed5d1f8c45bd6859ca4df.svg"
+                                        alt="Location image" />
+                                    Quetta, Pakistan</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="searchContainer">
+                    <input class="form-control m-0 searchBox" type="search"
+                        placeholder="Find Cars, Mobile phones and more..." aria-label="Search" />
+                    <button class="btn px-4 m-0 searchButton" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024"
+                            fill="white">
+                            <path
+                                d="M448 725.33c-152.92 0-277.33-124.41-277.33-277.33S295.08 170.67 448 170.67 725.33 295.08 725.33 448 600.92 725.33 448 725.33zm436.44 98.78v.02L732.52 672.19c48.77-61.78 78.15-139.54 78.15-224.19 0-199.98-162.7-362.67-362.67-362.67S85.33 248.03 85.33 448c0 199.98 162.69 362.67 362.67 362.67 84.63 0 162.41-29.38 224.17-78.15l206.14 206.15h60.36v-60.33l-54.23-54.23z">
+                            </path>
+                        </svg>
+                    </button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item d-flex align-items-center justify-content-center">
+                        <a class="nav-link active loginBtn" aria-current="page" href="#">Login</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center justify-content-center sellButton">
+                        <img class="image-container py-2" src="assets/sell.png" alt="sell button" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Categories Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 categories-container">
+        <div class="container navbar-category my-0 py-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown m-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" style="color:#002f34;">
+                        ALL CATEGORIES
+                    </a>
+                    <div class="container-fluid dropdown-menu category-dropdown-list" aria-labelledby="navbarDropdown1">
+                        <div class="row">
+                            <div class="col-lg-3 col-xs-6 category-block">
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Mobiles</div>
+                                    <div class="dropdown-item category-item">Tablets</div>
+                                    <div class="dropdown-item category-item">Accessories</div>
+                                    <div class="dropdown-item category-item">Mobile Phones</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Vehicles</div>
+                                    <div class="dropdown-item category-item">Cars</div>
+                                    <div class="dropdown-item category-item">Cars on Installments</div>
+                                    <div class="dropdown-item category-item">Cars Accessories</div>
+                                    <div class="dropdown-item category-item">Spare Parts</div>
+                                    <div class="dropdown-item category-item">Busses, Vans & Trucks</div>
+                                    <div class="dropdown-item category-item">Rickshaw & Chingchi</div>
+                                    <div class="dropdown-item category-item">Other Vehicles</div>
+                                    <div class="dropdown-item category-item">Boats</div>
+                                    <div class="dropdown-item category-item">Tractors & Trailors</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Property for Sale</div>
+                                    <div class="dropdown-item category-item">Lands & Plots</div>
+                                    <div class="dropdown-item category-item">Houses</div>
+                                    <div class="dropdown-item category-item">Appartments & Flats</div>
+                                    <div class="dropdown-item category-item">Shops - Offices - Commercial Space</div>
+                                    <div class="dropdown-item category-item">Portions & Floors</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xs-6 category-block">
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Electronics & Home Appliances</div>
+                                    <div class="dropdown-item category-item">Computers & Accessories</div>
+                                    <div class="dropdown-item category-item">TV - Video - Audio</div>
+                                    <div class="dropdown-item category-item">Cameras & Accessories</div>
+                                    <div class="dropdown-item category-item">Games & Entertainment</div>
+                                    <div class="dropdown-item category-item">Other Home Appliances</div>
+                                    <div class="dropdown-item category-item">Generators, UPS & Power Solutions</div>
+                                    <div class="dropdown-item category-item">Kitchen Appliances</div>
+                                    <div class="dropdown-item category-item">AC & Coolers</div>
+                                    <div class="dropdown-item category-item">Fridges & Freezers</div>
+                                    <div class="dropdown-item category-item">Washing Machines & Dryers</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Bikes</div>
+                                    <div class="dropdown-item category-item">Motorcycles</div>
+                                    <div class="dropdown-item category-item">Spare Parts</div>
+                                    <div class="dropdown-item category-item">Bicycles</div>
+                                    <div class="dropdown-item category-item">ATV & Quads</div>
+                                    <div class="dropdown-item category-item">Scooters</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Business, Industrial & Agriculture</div>
+                                    <div class="dropdown-item category-item">Business for Sale</div>
+                                    <div class="dropdown-item category-item">Foods & Restaurants</div>
+                                    <div class="dropdown-item category-item">Trade & Industrial</div>
+                                    <div class="dropdown-item category-item">Construction & Heavy Machinery</div>
+                                    <div class="dropdown-item category-item">Agriculture</div>
+                                    <div class="dropdown-item category-item">Other Business & Industry</div>
+                                    <div class="dropdown-item category-item">Medical & Pharma</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Services</div>
+                                    <div class="dropdown-item category-item">Education & Classes</div>
+                                    <div class="dropdown-item category-item">Travel & Visa</div>
+                                    <div class="dropdown-item category-item">Car Rental</div>
+                                    <div class="dropdown-item category-item">Drivers & Taxi</div>
+                                    <div class="dropdown-item category-item">Web Development</div>
+                                    <div class="dropdown-item category-item">Other Services</div>
+                                    <div class="dropdown-item category-item">Electronics & Computer Repair</div>
+                                    <div class="dropdown-item category-item">Event Services</div>
+                                    <div class="dropdown-item category-item">Health & Beauty</div>
+                                    <div class="dropdown-item category-item">Maids & Domestic Help</div>
+                                    <div class="dropdown-item category-item">Movers & Packers</div>
+                                    <div class="dropdown-item category-item">Home & Office Repair</div>
+                                    <div class="dropdown-item category-item">Catering & Restaurant</div>
+                                    <div class="dropdown-item category-item">Farm & Fresh Food</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xs-6 category-block">
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Jobs</div>
+                                    <div class="dropdown-item category-item">Online</div>
+                                    <div class="dropdown-item category-item">Marketing</div>
+                                    <div class="dropdown-item category-item">Advertising & PR</div>
+                                    <div class="dropdown-item category-item">Education</div>
+                                    <div class="dropdown-item category-item">Customer Service</div>
+                                    <div class="dropdown-item category-item">Sales</div>
+                                    <div class="dropdown-item category-item">IT & Networking</div>
+                                    <div class="dropdown-item category-item">Hostels & Tourism</div>
+                                    <div class="dropdown-item category-item">Clerical & Administration</div>
+                                    <div class="dropdown-item category-item">Human Resources</div>
+                                    <div class="dropdown-item category-item">Accounting & Finance</div>
+                                    <div class="dropdown-item category-item">Manufacturing</div>
+                                    <div class="dropdown-item category-item">Medical</div>
+                                    <div class="dropdown-item category-item">Domestic Staff</div>
+                                    <div class="dropdown-item category-item">Part - Time</div>
+                                    <div class="dropdown-item category-item">Other Jobs</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Animals</div>
+                                    <div class="dropdown-item category-item">Fish & Aquariums</div>
+                                    <div class="dropdown-item category-item">Birds</div>
+                                    <div class="dropdown-item category-item">Hens & Aseel</div>
+                                    <div class="dropdown-item category-item">Cats</div>
+                                    <div class="dropdown-item category-item">Dogs</div>
+                                    <div class="dropdown-item category-item">Livestock</div>
+                                    <div class="dropdown-item category-item">Horses</div>
+                                    <div class="dropdown-item category-item">Pet Food & Accessories</div>
+                                    <div class="dropdown-item category-item">Other Animals</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Furniture & Home Decor</div>
+                                    <div class="dropdown-item category-item">Sofa & Chairs</div>
+                                    <div class="dropdown-item category-item">Beds & Wardrobes</div>
+                                    <div class="dropdown-item category-item">Home Decoration</div>
+                                    <div class="dropdown-item category-item">Tables & Dining</div>
+                                    <div class="dropdown-item category-item">Garden & Outdoor</div>
+                                    <div class="dropdown-item category-item">Painting & Mirrors</div>
+                                    <div class="dropdown-item category-item">Rugs & Carpets</div>
+                                    <div class="dropdown-item category-item">Curtains & Blinds</div>
+                                    <div class="dropdown-item category-item">Office Furniture</div>
+                                    <div class="dropdown-item category-item">Other Household Items</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-xs-6 category-block">
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Fashion & Beauty</div>
+                                    <div class="dropdown-item category-item">Accessories</div>
+                                    <div class="dropdown-item category-item">Clothes</div>
+                                    <div class="dropdown-item category-item">Footwear</div>
+                                    <div class="dropdown-item category-item">Jewellery</div>
+                                    <div class="dropdown-item category-item">Make Up</div>
+                                    <div class="dropdown-item category-item">Skin & Care</div>
+                                    <div class="dropdown-item category-item">Watches</div>
+                                    <div class="dropdown-item category-item">Wedding</div>
+                                    <div class="dropdown-item category-item">Lawn & Pret</div>
+                                    <div class="dropdown-item category-item">Couture</div>
+                                    <div class="dropdown-item category-item">Other</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Books, Sports & Hobbies</div>
+                                    <div class="dropdown-item category-item">Books & Magazines</div>
+                                    <div class="dropdown-item category-item">Musical Instruments</div>
+                                    <div class="dropdown-item category-item">Sports Equipment</div>
+                                    <div class="dropdown-item category-item">Gym & Fitness</div>
+                                    <div class="dropdown-item category-item">Other Hobbies</div>
+                                </div>
+                                <div class="category-block">
+                                    <div class="dropdown-item category-heading">Kids</div>
+                                    <div class="dropdown-item category-item">Kids Furniture</div>
+                                    <div class="dropdown-item category-item">Toys</div>
+                                    <div class="dropdown-item category-item">Prams & Walkers</div>
+                                    <div class="dropdown-item category-item">Swings & Slides</div>
+                                    <div class="dropdown-item category-item">Kids Bikes</div>
+                                    <div class="dropdown-item category-item">Kids Accessories</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item m-1 d-lg-block d-none">
+                    <a class="nav-link" href="#">
+                        <p class="cat d-inline-flex align-text-center">Mobile Phones</p>
+                    </a>
+                </li>
+                <li class="nav-item m-1 d-lg-block d-none">
+                    <a class="nav-link" href="#">
+                        <p class="cat d-inline-flex align-text-center">Cars</p>
+                    </a>
+                </li>
+                <li class="nav-item m-1 d-lg-block d-none">
+                    <a class="nav-link" href="#">
+                        <p class="cat d-inline-flex align-text-center">Motorcycles</p>
+                    </a>
+                </li>
+                <li class="nav-item m-1 d-lg-block d-none">
+                    <a class="nav-link" href="#">
+                        <p class="cat d-inline-flex align-text-center">Houses</p>
+                    </a>
+                </li>
+                <li class="nav-item m-1 d-lg-block d-none">
+                    <a class="nav-link" href="#">
+                        <p class="cat d-inline-flex align-text-center">TV-Video-Audio</p>
+                    </a>
+                </li>
+                <li class="nav-item m-1 d-lg-block d-none">
+                    <a class="nav-link" href="#">
+                        <p class="cat d-inline-flex align-text-center">Tablets</p>
+                    </a>
+                </li>
+                <li class="nav-item m-1 d-lg-block d-none">
+                    <a class="nav-link" href="#">
+                        <p class="cat d-inline-flex align-text-center">Lands & Plots</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="container breadcrumbBar">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a class="breadcrumbText" href="../index.html">Home</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumbText" href="#">Vehicles</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumbText" href="#">Cars</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumbText" href="#">Cars in New Jersey</a></li>
+                <li class="breadcrumb-item"><a class="breadcrumbText" href="#">Cars in Gotham City</a></li>
+                <li class="breadcrumb-item active breadcrumbText" aria-current="page">The Original Batmobile</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Main Body -->
+
+    <div class="row mainBody">
+        <div class="col-lg-1 col-md-0 col-sm-0 col-xs-0"></div>
+        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+
+            <!-- Picture Carousal -->
+            <section class="imageBox d-flex justify-content-center">
+                <span class="featuredImage">FEATURED</span>
+                <img class="productImage img-fluid border rounded" src="assets/batmobile.jpeg" alt="Add Image">
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-sprite imageRightArrow" fill="white"
+                    viewBox="0 0 32 32">
+                    <path
+                        d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z">
+                    </path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-sprite imageLeftArrow" fill="white"
+                    viewBox="0 0 32 32">
+                    <path
+                        d="M24.34 28.65c.8.8.7 2.1-.1 2.8-.8.7-2 .7-2.7 0l-14-14c-.8-.8-.8-2 0-2.8l14-14c.8-.8 2-.8 2.8-.1.8.8.8 2 .1 2.8l-.1.1-12.6 12.5 12.6 12.7z">
+                    </path>
+                </svg>
+            </section>
+            <div class="border rounded relevantImageBox">
+                <img class="my-3 relevantImage" src="assets/batmobile.jpeg" alt="">
+                <img class="my-3 relevantImage" src="assets/batmobile1.jpeg" alt="">
+                <img class="my-3 relevantImage" src="assets/batmobile2.jpeg" alt="">
+            </div>
+
+            <section class="border rounded mt-2 mobile">
+                <span class="d-block px-3 my-4 priceHeading">Rs 9,000,000</span>
+                <span class="d-block px-3 carYear">2006 - 100,100 km</span>
+                <span class="d-block px-3 extraDetail1">Car for Sell</span>
+                <div class="d-flex px-3 mb-3 mt-4 justify-content-between">
+                    <span class="extraDetail2">Gotham City</span>
+                    <span class="extraDetail2">1 day ago </span>
+                </div>
+                <span class="shareImage mt-4 rounded-circle d-flex justify-content-center"><img
+                        src="https://www.olx.com.pk/assets/iconShare_noinline.41d8fa8326fea7b27bc24d3eca8b598a.svg"
+                        alt=""></span>
+                <span class="heartImagePriceSection mt-4"><img class="heartImagePriceSection"
+                        src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt=""></span>
+            </section>
+
+            <!-- Product Detail Section -->
+
+            <section class="mt-2 py-3 px-1 productDetailSection border rounded">
+                <span class="productDetailHeading px-2">Details</span>
+                <div class="d-flex justify-content-between">
+                    <div class="detailBox px-2">
+                        <span class="d-flex justify-content-between align-items-center">
+                            <p class="detailName">Year</p>
+                            <p class="detailValue">2006</p>
+                        </span>
+                        <span class="d-flex justify-content-between align-items-center">
+                            <p class="detailName">Price</p>
+                            <p class="detailValue">9,000,000</p>
+                        </span>
+                        <span class="d-flex justify-content-between align-items-center">
+                            <p class="detailName">Model</p>
+                            <p class="detailValue">Batmobile</p>
+                        </span>
+                        <span class="d-flex justify-content-between align-items-center">
+                            <p class="detailName">Registered in</p>
+                            <p class="detailValue">Gotham City</p>
+                        </span>
+                    </div>
+                    <div class="detailBox px-2">
+                        <span class="d-flex justify-content-between align-items-center">
+                            <p class="detailName">KM's driven</p>
+                            <p class="detailValue">100,000</p>
+                        </span>
+                        <span class="d-flex justify-content-between align-items-center">
+                            <p class="detailName">Make</p>
+                            <p class="detailValue">Batmobile</p>
+                        </span>
+                        <span class="d-flex justify-content-between align-items-center">
+                            <p class="detailName">Fuel</p>
+                            <p class="detailValue">Ethanol</p>
+                        </span>
+                        <span class="d-flex justify-content-between align-items-center">
+                            <p class="detailName">Condition</p>
+                            <p class="detailValue">Used</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="detailDivider"></div>
+
+                <div class="descriptionBox mt-3">
+                    <span class="productDetailHeading px-2">Description</span>
+                    <p class="detailValue px-2 my-2">The original Batmobile<br>Car condition is very good<br>A collector
+                        car<br>Water dropping engine
+                    </p>
+                </div>
+            </section>
+
+            <section class="border rounded mt-2 mobile pt-4">
+                <span class="sellerDescriptionHeading px-3">Seller Description</span>
+                <div class="d-flex px-3 mt-3 userDetailsBox">
+                    <img class="sellerPhoto"
+                        src="https://www.olx.com.pk/assets/iconProfilePicture.7975761176487dc62e25536d9a36a61d.png"
+                        alt="">
+                    <span class="userInfoBox">
+                        <span class="d-block sellerName">Bruce Wayne</span>
+                        <span class="d-block joinDate">Member since July 2021</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        class="svg-icon-sprite userProfileArrow" viewBox="0 0 32 32">
+                        <path
+                            d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="chatButton d-flex mx-3 justify-content-center mt-2">Chat with seller</span>
+                <div class="d-flex mt-4 mb-2 justify-content-center">
+                    <svg width="26" height="26" viewBox="0 0 1024 1024">
+                        <path
+                            d="M784.55 852.4c-331.43-14.64-598.31-281.52-612.94-612.95l149.97-60 91.69 183.43-71 35.5v26.45c0 141.66 115.25 256.9 256.9 256.9h26.45l11.86-23.64 23.68-47.36 183.38 91.74-59.99 149.93zM918.1 643.45L661.16 514.99l-57.47 19.2-30.04 60.03c-74.07-11.1-132.73-69.8-143.87-143.87l60.08-30.04L509 362.88 380.6 105.94l-54.2-20.6-214.18 85.63-26.88 39.8c0 401.37 326.57 727.9 727.94 727.9l39.76-26.88 85.64-214.19-20.61-54.19z">
+                        </path>
+                    </svg>
+                    <span class="phoneNum">** *** ****</span>
+                    <span class="showNumberBtn">Show number</span>
+                </div>
+            </section>
+
+            <section class="border rounded mt-2 pt-4 px-3 pb-3 mobile">
+                <span class="d-block locationHeading">Posted in</span>
+                <span class="locationName">Gotham City, NYC</span>
+                <div class="border rounded locationImageBox">
+                    <img class="locationImage" src="https://www.olx.com.pk/assets/mapPlaceholder_noinline.af3a4b7300a65b66f974eed7023840ac.svg"
+                        alt="">
+
+                    <div class="d-flex seeLocationBtn justify-content-between">
+                        <span class="locationBtnText">SEE LOCATION</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="svg-icon-sprite"
+                            viewBox="0 0 32 32">
+                            <path
+                                d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Ads Section -->
+            <section class="relatedAdsBox border roumded mt-2 py-3">
+                <span class="productDetailHeading px-2">Related ads</span>
+                <div class="d-flex px-5 my-3 addSlider">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-sprite sliderRightArrow"
+                        viewBox="0 0 32 32">
+                        <path
+                            d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z">
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-sprite sliderLeftArrow" viewBox="0 0 32 32">
+                        <path
+                            d="M24.34 28.65c.8.8.7 2.1-.1 2.8-.8.7-2 .7-2.7 0l-14-14c-.8-.8-.8-2 0-2.8l14-14c.8-.8 2-.8 2.8-.1.8.8.8 2 .1 2.8l-.1.1-12.6 12.5 12.6 12.7z">
+                        </path>
+                    </svg>
+                    <div class="card addCard relatedAdd">
+                        <a href="batmobile.html" class="text-decoration-none text-dark">
+                            <i class="bi bi-heart heart-icon"></i>
+                            <span class=featured-bar></span>
+                            <img src="assets/batmobile.jpeg" class="card-img-top cardImage" alt="...">
+                            <div class="card-body">
+                                <span class="featured">FEATURED</span>
+                                <span class="locationOfAdd">Gotham City</span>
+                                <span class="timeOfAdd">1 DAY AGO</span>
+                                <div class="card-text">
+                                    <p class="p-0 m-0 cardPrice"><b>RS&nbsp;9,000,000</b></p>
+                                    <p class="p-0 m-0 cardDesc">The original batmobile</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card addCard relatedAdd">
+                        <a href="batmobile.html" class="text-decoration-none text-dark">
+                            <i class="bi bi-heart heart-icon"></i>
+                            <span class=featured-bar></span>
+                            <img src="assets/batmobile.jpeg" class="card-img-top cardImage" alt="...">
+                            <div class="card-body">
+                                <span class="featured">FEATURED</span>
+                                <span class="locationOfAdd">Gotham City</span>
+                                <span class="timeOfAdd">1 DAY AGO</span>
+                                <div class="card-text">
+                                    <p class="p-0 m-0 cardPrice"><b>RS&nbsp;9,000,000</b></p>
+                                    <p class="p-0 m-0 cardDesc">The original batmobile</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card addCard relatedAdd card3">
+                        <a href="batmobile.html" class="text-decoration-none text-dark">
+                            <i class="bi bi-heart heart-icon"></i>
+                            <span class=featured-bar></span>
+                            <img src="assets/batmobile.jpeg" class="card-img-top cardImage" alt="...">
+                            <div class="card-body">
+                                <span class="featured">FEATURED</span>
+                                <span class="locationOfAdd">Gotham City</span>
+                                <span class="timeOfAdd">1 DAY AGO</span>
+                                <div class="card-text">
+                                    <p class="p-0 m-0 cardPrice"><b>RS&nbsp;9,000,000</b></p>
+                                    <p class="p-0 m-0 cardDesc">The original batmobile</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card addCard relatedAdd card4">
+                        <a href="batmobile.html" class="text-decoration-none text-dark">
+                            <i class="bi bi-heart heart-icon"></i>
+                            <span class=featured-bar></span>
+                            <img src="assets/batmobile.jpeg" class="card-img-top cardImage" alt="...">
+                            <div class="card-body">
+                                <span class="featured">FEATURED</span>
+                                <span class="locationOfAdd">Gotham City</span>
+                                <span class="timeOfAdd">1 DAY AGO</span>
+                                <div class="card-text">
+                                    <p class="p-0 m-0 cardPrice"><b>RS&nbsp;9,000,000</b></p>
+                                    <p class="p-0 m-0 cardDesc">The original batmobile</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+
+            <!-- Price Section -->
+
+            <section class="border rounded priceSection">
+                <span class="d-block px-3 my-4 priceHeading">Rs 9,000,000</span>
+                <span class="d-block px-3 carYear">2006 - 100,100 km</span>
+                <span class="d-block px-3 extraDetail1">Car for Sell</span>
+                <div class="d-flex px-3 mb-3 mt-4 justify-content-between">
+                    <span class="extraDetail2">Gotham City</span>
+                    <span class="extraDetail2">1 day ago </span>
+                </div>
+                <span class="shareImage mt-4 rounded-circle d-flex justify-content-center"><img
+                        src="https://www.olx.com.pk/assets/iconShare_noinline.41d8fa8326fea7b27bc24d3eca8b598a.svg"
+                        alt=""></span>
+                <span class="heartImagePriceSection mt-4"><img class="heartImagePriceSection"
+                        src="https://www.olx.com.pk/assets/iconFavoriteUnselected_noinline.5767fec1cf12da79531e7c0b4a94f4e2.svg"
+                        alt=""></span>
+            </section>
+
+            <!-- Seller Description Section -->
+            <section class="border rounded mt-2 sellerDescriptionSection pt-4">
+                <span class="sellerDescriptionHeading px-3">Seller Description</span>
+                <div class="d-flex px-3 mt-3 userDetailsBox">
+                    <img class="sellerPhoto"
+                        src="https://www.olx.com.pk/assets/iconProfilePicture.7975761176487dc62e25536d9a36a61d.png"
+                        alt="">
+                    <span class="userInfoBox">
+                        <span class="d-block sellerName">Bruce Wayne</span>
+                        <span class="d-block joinDate">Member since July 2021</span>
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                        class="svg-icon-sprite userProfileArrow" viewBox="0 0 32 32">
+                        <path
+                            d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="chatButton d-flex mx-3 justify-content-center mt-2">Chat with seller</span>
+                <div class="d-flex mt-4 mb-2 justify-content-center">
+                    <svg width="26" height="26" viewBox="0 0 1024 1024">
+                        <path
+                            d="M784.55 852.4c-331.43-14.64-598.31-281.52-612.94-612.95l149.97-60 91.69 183.43-71 35.5v26.45c0 141.66 115.25 256.9 256.9 256.9h26.45l11.86-23.64 23.68-47.36 183.38 91.74-59.99 149.93zM918.1 643.45L661.16 514.99l-57.47 19.2-30.04 60.03c-74.07-11.1-132.73-69.8-143.87-143.87l60.08-30.04L509 362.88 380.6 105.94l-54.2-20.6-214.18 85.63-26.88 39.8c0 401.37 326.57 727.9 727.94 727.9l39.76-26.88 85.64-214.19-20.61-54.19z">
+                        </path>
+                    </svg>
+                    <span class="phoneNum">** *** ****</span>
+                    <span class="showNumberBtn">Show number</span>
+                </div>
+            </section>
+
+            <!-- Location Section-->
+            <section class="border rounded mt-2 pt-4 px-3 pb-3 locationBox">
+                <span class="d-block locationHeading">Posted in</span>
+                <span class="locationName">Gotham City, NYC</span>
+                <div class="border rounded locationImageBox">
+                    <img class="locationImage" src="https://www.olx.com.pk/assets/mapPlaceholder_noinline.af3a4b7300a65b66f974eed7023840ac.svg"
+                        alt="">
+
+                    <div class="d-flex seeLocationBtn justify-content-between">
+                        <span class="locationBtnText">SEE LOCATION</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" class="svg-icon-sprite"
+                            viewBox="0 0 32 32">
+                            <path
+                                d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <div class="d-flex justify-content-between addNumber">
+                <span style="font-size: 14px;">AD ID 1037897764</span>
+                <span style="font-size: 12px;">REPORT THIS AD</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer 1 -->
+    <footer>
+        <div class="row footerArea1 mt-5">
+            <img class="col-lg-4 col-md-6 col-sm-6 col-xs-6 img-fluid"
+                src="https://www.olx.com.pk/assets/olxMobileApp.f5579f77e849b600ad60857e46165516.webp"
+                alt="footer image 1">
+
+            <div class="col-lg-4 col-md-0 col-sm-0 col-xs-0 footer1 footer1Sec2">
+                <div class="footer1Heading">TRY THE OLX APP</div><br>
+                <div class="footer1Text">Buy, sell and find just about anything using the app on your mobile.</div>
+                <span class="sectionDivider"></span>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 footer1 footer1Sec3">
+                <div class="footer1Sec3Text">GET YOUR APP TODAY</div>
+                <div class="storeImages">
+                    <img class="p-1"
+                        src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg"
+                        alt="app store image">
+                    <img class="p-1"
+                        src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg"
+                        alt="playstore image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer 2-->
+        <div class="container">
+            <div class="row footer2Area">
+                <ul class="col-lg-2 col-md-6 col-sm-6 col-xs-6 footer2list">
+                    <li class="footer2Sec1Head">POPULAR&nbsp;CATEGORIES</li>
+                    <li class="footer2Sec1Text">Cars</li>
+                    <li class="footer2Sec1Text">Flats for rent</li>
+                    <li class="footer2Sec1Text">Mobile Phones</li>
+                    <li class="footer2Sec1Text">Jobs</li>
+                </ul>
+
+                <ul class="col-lg-2 col-md-6 col-sm-6 col-xs-6 footer2list">
+                    <li class="footer2Sec1Head">TRENDING&nbsp;SEARCHES</li>
+                    <li class="footer2Sec1Text">Bikes</li>
+                    <li class="footer2Sec1Text">Watches</li>
+                    <li class="footer2Sec1Text">Books</li>
+                    <li class="footer2Sec1Text">Dogs</li>
+                </ul>
+
+                <ul class="col-lg-2 col-md-6 col-sm-6 col-xs-6 footer2list">
+                    <li class="footer2Sec1Head">ABOUT US</li>
+                    <li class="footer2Sec1Text">About EMPG</li>
+                    <li class="footer2Sec1Text">OLX Blog</li>
+                    <li class="footer2Sec1Text">Contact Us</li>
+                    <li class="footer2Sec1Text">OLX&nbsp;for&nbsp;Businesses</li>
+                </ul>
+
+                <ul class="col-lg-2 col-md-6 col-sm-6 col-xs-6 footer2list">
+                    <li class="footer2Sec1Head">OLX</li>
+                    <li class="footer2Sec1Text">Help</li>
+                    <li class="footer2Sec1Text">Sitemap</li>
+                    <li class="footer2Sec1Text">Legal&nbsp;and&nbsp;Privacy&nbsp;information</li>
+                </ul>
+
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 footer2Sec2">
+                    <h3 class="follow-us-text">FOLLOW US</h3>
+                    <ul class="footer2Sec2List">
+                        <li class="socialmedia-icon"><img class="socialmedia-img"
+                                src="https://www.olx.com.pk/assets/iconFacebook_noinline.773db88c5b9ee5aaab365e61cdb750da.svg"
+                                alt="facebook icon"></li>
+                        <li class="socialmedia-icon"><img class="socialmedia-img"
+                                src="https://www.olx.com.pk/assets/iconTwitter_noinline.6037fa7d9a7b9d6408fb1b3d70524b97.svg"
+                                alt="twitter icon"></li>
+                        <li class="socialmedia-icon"><img class="socialmedia-img"
+                                src="https://www.olx.com.pk/assets/iconYoutube_noinline.c85bd6801ec83d6a3b498059550bef26.svg"
+                                alt="music icon"></li>
+                        <li class="socialmedia-icon"><img class="socialmedia-img"
+                                src="https://www.olx.com.pk/assets/iconInstagram_noinline.d7d5811ebc44e03a674c8d0b5ff3f232.svg"
+                                alt="instagram icon"></li>
+                    </ul>
+                    <div class="footer2Sec2StoreImages">
+                        <img class="p-1"
+                            src="https://www.olx.com.pk/assets/iconAppStoreEN_noinline.a731d99c8218d6faa0e83a6d038d08e8.svg"
+                            alt="app store image">
+                        <img class="p-1"
+                            src="https://www.olx.com.pk/assets/iconGooglePlayEN_noinline.9892833785b26dd5896b7c70b089f684.svg"
+                            alt="playstore image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer 3 -->
+        <div class="footer3Area align-items-center justify-content-between">
+            <div class="container footer3ContentArea text-white d-flex">
+                <h3 class="footer3Head">Free Classifieds in Pakistan</h3>
+                <p class="footer3Text"> .&copy; 2006-2021 OLX</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
