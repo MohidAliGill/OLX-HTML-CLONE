@@ -48,6 +48,7 @@
 }
 
 .relevantImage {
+  object-fit: cover;
   height: 60px;
   width: 60px;
   margin-left: 30px;
