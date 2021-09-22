@@ -149,6 +149,7 @@
 }
 
 .heartImagePriceSection {
+  margin-top: 18px;
   height: 24px;
   width: 24px;
   position: absolute;
@@ -158,6 +159,7 @@
 }
 
 .shareImage {
+  margin-top: 36px;
   height: 24px;
   width: 24px;
   position: absolute;
@@ -174,6 +176,8 @@
   color: #0d2f34;
   font-size: 33px;
   font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .carYear {
@@ -209,7 +213,7 @@
 }
 
 .joinDate {
-  font-size: 14px;
+  font-size: 0.9vw;
   color: rgba(0, 47, 52, 0.64);
 }
 
@@ -294,6 +298,10 @@
   display: none;
 }
 
+.addNumAndReport {
+  font-size: 0.9vw;
+}
+
 @media (max-width: 1515px) {
   .relatedAdd {
     width: 33%;
@@ -304,6 +312,18 @@
   }
 }
 
+@media (max-width: 1320px) {
+  .priceHeading {
+    font-size: 22px;
+    margin-top: 31px;
+  }
+  /*
+  .joinDate {
+    font-size: 12px;
+  }
+  */
+}
+
 @media (max-width: 1200px) {
   .relatedAdd {
     width: 49%;
@@ -312,9 +332,24 @@
   .card3 {
     display: none;
   }
+  /*
+  .joinDate {
+    font-size: 8px;
+  }
+  */
 }
 
 @media (max-width: 998px) {
+  /*
+  .joinDate {
+    font-size: 14px;
+  }
+*/
+  .priceHeading {
+    font-size: 33px;
+    margin-top: 24px;
+  }
+
   .breadcrumbBar,
   .imageBox {
     padding-left: 1rem;
