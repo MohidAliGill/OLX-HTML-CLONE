@@ -19,14 +19,9 @@
   color: #174246;
 }
 
-.imageBox {
-  position: relative;
-  background-color: #000000;
-}
-
 .productImage {
+  object-fit: cover;
   height: 480px;
-  width: auto;
 }
 
 .imageRightArrow {

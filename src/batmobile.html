@@ -358,24 +358,38 @@
         <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
 
             <!-- Picture Carousal -->
-            <section class="imageBox d-flex justify-content-center">
-                <span class="featuredImage">FEATURED</span>
-                <img class="productImage img-fluid border rounded" src="assets/batmobile.jpeg" alt="Add Image">
-                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-sprite imageRightArrow" fill="white"
-                    viewBox="0 0 32 32">
-                    <path
-                        d="M7.55 3.36c-.8-.8-.7-2.1.1-2.8.8-.7 2-.7 2.7 0l14 14c.8.8.8 2 0 2.8l-14 14c-.8.8-2 .8-2.8.1-.8-.8-.8-2-.1-2.8l.1-.1 12.6-12.5-12.6-12.7z">
-                    </path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon-sprite imageLeftArrow" fill="white"
-                    viewBox="0 0 32 32">
-                    <path
-                        d="M24.34 28.65c.8.8.7 2.1-.1 2.8-.8.7-2 .7-2.7 0l-14-14c-.8-.8-.8-2 0-2.8l14-14c.8-.8 2-.8 2.8-.1.8.8.8 2 .1 2.8l-.1.1-12.6 12.5 12.6 12.7z">
-                    </path>
-                </svg>
+
+            <section>
+                <div id="productImageCarousal" class="carousel slide" data-bs-ride="carousel" data-bs-interval=false>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/batmobile.jpeg" class="d-block w-100 productImage" alt="...">
+                            <span class="featuredImage">FEATURED</span>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/batmobile1.jpeg" class="d-block w-100 productImage" alt="...">
+                            <span class="featuredImage">FEATURED</span>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/batmobile2.jpeg" class="d-block w-100 productImage" alt="...">
+                            <span class="featuredImage">FEATURED</span>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productImageCarousal"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productImageCarousal"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </section>
+
             <div class="border rounded relevantImageBox">
-                <img class="my-3 relevantImage" src="assets/batmobile.jpeg" alt="">
+                <img class="my-3 relevantImage border border-dark border-2" src="assets/batmobile.jpeg" alt="">
                 <img class="my-3 relevantImage" src="assets/batmobile1.jpeg" alt="">
                 <img class="my-3 relevantImage" src="assets/batmobile2.jpeg" alt="">
             </div>
@@ -482,7 +496,8 @@
                 <span class="d-block locationHeading">Posted in</span>
                 <span class="locationName">Gotham City, NYC</span>
                 <div class="border rounded locationImageBox">
-                    <img class="locationImage" src="https://www.olx.com.pk/assets/mapPlaceholder_noinline.af3a4b7300a65b66f974eed7023840ac.svg"
+                    <img class="locationImage"
+                        src="https://www.olx.com.pk/assets/mapPlaceholder_noinline.af3a4b7300a65b66f974eed7023840ac.svg"
                         alt="">
 
                     <div class="d-flex seeLocationBtn justify-content-between">
@@ -640,7 +655,8 @@
                 <span class="d-block locationHeading">Posted in</span>
                 <span class="locationName">Gotham City, NYC</span>
                 <div class="border rounded locationImageBox">
-                    <img class="locationImage" src="https://www.olx.com.pk/assets/mapPlaceholder_noinline.af3a4b7300a65b66f974eed7023840ac.svg"
+                    <img class="locationImage"
+                        src="https://www.olx.com.pk/assets/mapPlaceholder_noinline.af3a4b7300a65b66f974eed7023840ac.svg"
                         alt="">
 
                     <div class="d-flex seeLocationBtn justify-content-between">
