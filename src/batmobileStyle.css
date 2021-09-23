@@ -295,11 +295,6 @@
     font-size: 22px;
     margin-top: 31px;
   }
-  /*
-  .joinDate {
-    font-size: 12px;
-  }
-  */
 }
 
 @media (max-width: 1200px) {
@@ -310,19 +305,9 @@
   .card3 {
     display: none;
   }
-  /*
-  .joinDate {
-    font-size: 8px;
-  }
-  */
 }
 
 @media (max-width: 998px) {
-  /*
-  .joinDate {
-    font-size: 14px;
-  }
-*/
   .priceHeading {
     font-size: 33px;
     margin-top: 24px;

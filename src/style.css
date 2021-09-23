@@ -127,6 +127,7 @@ body {
 .category-dropdown-list {
   width: 650%;
   z-index: 1501;
+  overflow-x: hidden;
 }
 
 .recomendationHeading {
