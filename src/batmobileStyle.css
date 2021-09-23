@@ -111,6 +111,7 @@
   width: 32px;
   top: 45%;
   right: 5px;
+  cursor: pointer;
 }
 
 .sliderLeftArrow {
@@ -119,6 +120,11 @@
   width: 32px;
   top: 45%;
   left: 5px;
+  cursor: pointer;
+}
+
+.reportAdd {
+  cursor: pointer;
 }
 
 .priceSection {
@@ -226,6 +232,7 @@
   height: 38px;
   width: 90%;
   padding-top: 8px;
+  cursor: pointer;
 }
 
 .showNumberBtn {
@@ -254,6 +261,7 @@
 
 .seeLocationBtn {
   padding: 12px;
+  cursor: pointer;
 }
 
 .locationBtnText {
@@ -345,6 +353,16 @@
   .sellerDescriptionSection,
   .locationBox {
     display: none;
+  }
+
+  .joinDate {
+    font-size: 16px;
+  }
+
+  .addNumAndReport {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
