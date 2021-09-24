@@ -4,8 +4,7 @@
 }
 
 .mainBody {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
 }
 
 .breadcrumbText {
@@ -43,8 +42,7 @@
   font-size: 12px;
   font-weight: 600;
   text-align: center;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding: 3px 0 3px 0;
   top: 30px;
   left: 0;
 }
@@ -160,8 +158,7 @@
   color: #0d2f34;
   font-size: 33px;
   font-weight: 700;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  margin: 24px 0;
 }
 
 .carYear {
@@ -218,8 +215,7 @@
 }
 
 .phoneNum {
-  margin-right: 16px;
-  margin-left: 16px;
+  margin: auto 16px;
   font-size: 14px;
   color: #133c41;
 }
@@ -361,8 +357,7 @@
 
   .addNumAndReport {
     font-size: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: auto 20px;
   }
 }
 
